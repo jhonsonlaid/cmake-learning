@@ -1,0 +1,22 @@
+SET(LIBHELLO_SRC hello.c)
+
+# libname [SHARED|STATIC|MODULE] source1, source2...
+# shared object libhello.dylib or libhello.so
+ADD_LIBRARY(hello SHARED ${LIBHELLO_SRC})
+
+# static libhello_static.a
+ADD_LIBRARY(hello_static STATIC ${LIBHELLO_SRC})
+# set output_name libhello.a
+SET_TARGET_PROPERTIES(hello_static PROPERTIES OUTPUT_NAME "hello")
+# SET_TARGET_PROPERTIES(hello PROPERTIES CLEAN_DIRECT_OUTPUT 1)
+# SET_TARGET_PROPERTIES(hello_static PROPERTIES CLEAN_DIRECT_OUTPUT 1)
+SET_TARGET_PROPERTIES(hello PROPERTIES VERSION 1.2 SOVERSIO 1)
+
+INSTALL(TARGETS hello hello_static
+	LIBRARY DESTINATION lib
+	ARCHIVE DESTINATION lib)
+
+INSTALL(FILES hello.h DESTINATION include/hello)
+
+
+

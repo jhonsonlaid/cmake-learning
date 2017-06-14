@@ -1,0 +1,1 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk -dynamiclib -Wl,-headerpad_max_install_names -current_version 1.2.0 -o libhello.1.2.dylib -install_name @rpath/libhello.1.2.dylib CMakeFiles/hello.dir/hello.c.o 
