@@ -1,0 +1,5 @@
+/Users/johnsonlai/Documents/Code/cmake/t6/build/CMakeFiles/edit_cache.dir
+/Users/johnsonlai/Documents/Code/cmake/t6/build/CMakeFiles/rebuild_cache.dir
+/Users/johnsonlai/Documents/Code/cmake/t6/build/bin/CMakeFiles/edit_cache.dir
+/Users/johnsonlai/Documents/Code/cmake/t6/build/bin/CMakeFiles/rebuild_cache.dir
+/Users/johnsonlai/Documents/Code/cmake/t6/build/bin/CMakeFiles/hello.dir
